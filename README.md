@@ -14,7 +14,7 @@
 <p align="center">
 
 
-  <h3 align="center">Passwgen</h3>
+  <h3 align="center">PasswGen</h3>
 
   <p align="center">
     An flexible wordlist generation framework
@@ -104,7 +104,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the GPLv3 License. See `LICENSE` for more information.
 
 
 
