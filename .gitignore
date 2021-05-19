@@ -6,3 +6,6 @@
 # system-specific installation data
 
 /*.egg-info/
+
+#coverage html pages
+/htmlcov/
