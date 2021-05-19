@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+WordGen.egg-info/PKG-INFO
+WordGen.egg-info/SOURCES.txt
+WordGen.egg-info/dependency_links.txt
+WordGen.egg-info/top_level.txt
+wordgen/__init__.py
+wordgen/generateWordList.py

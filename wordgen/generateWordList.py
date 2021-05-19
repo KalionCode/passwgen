@@ -1,9 +1,9 @@
 import itertools
 
-import passwgen.formats 
-import passwgen.utils as utils 
+import wordgen.formats 
+import wordgen.utils as utils 
 
-from passwgen.utils.registerFunc import getRegistered 
+from wordgen.utils.registerFunc import getRegistered 
 
 default_config = {
     'leet':{

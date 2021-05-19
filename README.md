@@ -14,7 +14,7 @@
 <p align="center">
 
 
-  <h3 align="center">PasswGen</h3>
+  <h3 align="center">WordGen</h3>
 
   <p align="center">
     An flexible wordlist generation framework
@@ -60,7 +60,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-PasswGen is a wordlist generation framework that is primarily targeted for passwords. It can be assisted with social engineering to generate any targets as PasswGen uses a keyword-combination approach rather than hardcoded algorithms. For each keyword combination, you then can use built-in or user-defined 'formatter' functions to manipulate and generate more entries based on the original combination.
+WordGen is a wordlist generation framework that is primarily targeted for passwords. It can be assisted with social engineering to generate any targets as WordGen uses a keyword-combination approach rather than hardcoded algorithms. For each keyword combination, you then can use built-in or user-defined 'formatter' functions to manipulate and generate more entries based on the original combination.
 
 
 <!-- GETTING STARTED -->
@@ -77,30 +77,30 @@ The project come with a default preset and can be used straight out of the box.
 
 First, clone the repositry
    ```sh
-   git clone hhttps://github.com/KalionCode/passwgen.git
+   git clone hhttps://github.com/KalionCode/wordgen.git
    ```
 Then install the locally cloned package with ```pip```
   ```sh
-  cd passwgen 
+  cd wordgen 
   pip install -e .
   ```
 or install directly from the ```pip``` repositry **(waiting for approval)**
   ```sh
-  pip install passwgen
+  pip install wordgen
   ```
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-PasswGen uses a keyword combination approach on generating entries. What that means is that you basically give PasswGen a list of keywords and it returns you different combinations of those keywords. The most basic usage would be:
+WordGen uses a keyword combination approach on generating entries. What that means is that you basically give WordGen a list of keywords and it returns you different combinations of those keywords. The most basic usage would be:
 ```python
-import passwgen
-@passwgen.utils.registerU(2)
+import wordgen
+@wordgen.utils.registerU(2)
 def someFunction(fstr, config , usedKeywords):
   print(fstr)
 
-passwgen.generateWordList(['foo', 'bar'])
+wordgen.generateWordList(['foo', 'bar'])
 
 # output: 
 # foofoofoo
@@ -108,7 +108,7 @@ passwgen.generateWordList(['foo', 'bar'])
 # barbarfoo
 # barbarbar
 ```
-The ```import``` statement imports the packages related to PasswGen. The decorator ```passwgen.utils.registerU()``` is used to register the block of code running in the specified loop (if in the n-th loop that means the loop will generate entries consisting n element)
+The ```import``` statement imports the packages related to WordGen. The decorator ```wordgen.utils.registerU()``` is used to register the block of code running in the specified loop (if in the n-th loop that means the loop will generate entries consisting n element)
 
 
 <!-- CONTRIBUTING -->
