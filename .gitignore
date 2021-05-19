@@ -5,4 +5,4 @@
 
 # system-specific installation data
 
-/PasswGen.egg-info/
+/*.egg-info/
