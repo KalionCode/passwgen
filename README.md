@@ -77,55 +77,20 @@ The project come with a default preset and can be used straight out of the box.
 
 First, clone the repositry
    ```sh
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> b002d12f4c8dff493720c81c3fed5ab065d46cd5
-   git clone hhttps://github.com/KalionCode/wordgen.git
+
+   git clone https://github.com/KalionCode/wordgen.git
    ```
 Then install the locally cloned package with ```pip```
   ```sh
   cd wordgen 
-<<<<<<< HEAD
-
-   git clone hhttps://github.com/KalionCode/wordgen.git
-   ```
+  pip install -e . 
+  ```
 
 or install directly from the ```pip``` repositry **(waiting for approval)**
   ```sh
+  pip install wordgen
+  ```
 
-  pip install wordgen
-=======
-=======
-<<<<<<< HEAD
-   git clone hhttps://github.com/KalionCode/wordgen.git
-   ```
-Then install the locally cloned package with ```pip```
-  ```sh
-  cd wordgen 
-=======
-   git clone hhttps://github.com/KalionCode/WordGen.git
-   ```
-Then install the locally cloned package with ```pip```
-  ```sh
-  cd WordGen 
->>>>>>> 544c5f5c55ff1c6da2a8fc8cc289aa5fb37983e5
->>>>>>> d784d8e3c9542e080d34e2c78298b7665c26f84b
-  pip install -e .
-  ```
-or install directly from the ```pip``` repositry **(waiting for approval)**
-  ```sh
-<<<<<<< HEAD
-  pip install wordgen
-=======
-<<<<<<< HEAD
-  pip install wordgen
-=======
-  pip install WordGen
->>>>>>> 544c5f5c55ff1c6da2a8fc8cc289aa5fb37983e5
->>>>>>> d784d8e3c9542e080d34e2c78298b7665c26f84b
->>>>>>> b002d12f4c8dff493720c81c3fed5ab065d46cd5
-  ```
 
 
 
@@ -146,21 +111,8 @@ wordgen.generateWordList(['foo', 'bar'])
 # barbarfoo
 # barbarbar
 ```
-<<<<<<< HEAD
 
 The ```import``` statement imports the packages related to WordGen. The decorator ```wordgen.utils.registerU()``` is used to register the block of code running in the specified loop (if in the n-th loop that means the loop will generate entries consisting n element)
-
-=======
-<<<<<<< HEAD
-The ```import``` statement imports the packages related to WordGen. The decorator ```wordgen.utils.registerU()``` is used to register the block of code running in the specified loop (if in the n-th loop that means the loop will generate entries consisting n element)
-=======
-<<<<<<< HEAD
-The ```import``` statement imports the packages related to WordGen. The decorator ```wordgen.utils.registerU()``` is used to register the block of code running in the specified loop (if in the n-th loop that means the loop will generate entries consisting n element)
-=======
-The ```import``` statement imports the packages related to WordGen. The decorator ```WordGen.utils.registerU()``` is used to register the block of code running in the specified loop (if in the n-th loop that means the loop will generate entries consisting n element)
->>>>>>> 544c5f5c55ff1c6da2a8fc8cc289aa5fb37983e5
->>>>>>> d784d8e3c9542e080d34e2c78298b7665c26f84b
->>>>>>> b002d12f4c8dff493720c81c3fed5ab065d46cd5
 
 
 <!-- CONTRIBUTING -->
