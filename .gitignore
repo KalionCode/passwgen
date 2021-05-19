@@ -2,3 +2,7 @@
 /__pycache__/
 /__pycache__/*
 *.pyc
+
+# system-specific installation data
+
+/PasswGen.egg-info/
