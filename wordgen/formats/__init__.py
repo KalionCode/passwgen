@@ -9,4 +9,4 @@ formats = os.listdir(parentDir)
 formats = [pathlib.Path(i).stem for i in formats if (i != '__init__.py' and isfile(join(parentDir, i)))]
 
 for i in formats:
-    exec(f'{i}{parentDirName[:1].upper()} = importlib.import_module("passwgen.{parentDirName}.{i}").main')
+    exec(f'{i}{parentDirName[:1].upper()} = importlib.import_module("wordgen.{parentDirName}.{i}").main')
