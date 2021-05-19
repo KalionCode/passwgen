@@ -82,10 +82,13 @@ First, clone the repositry
 Then install the locally cloned package with ```pip```
   ```sh
   cd wordgen 
-  pip install -e .
-  ```
+
+   git clone hhttps://github.com/KalionCode/wordgen.git
+   ```
+
 or install directly from the ```pip``` repositry **(waiting for approval)**
   ```sh
+
   pip install wordgen
   ```
 
@@ -108,7 +111,9 @@ wordgen.generateWordList(['foo', 'bar'])
 # barbarfoo
 # barbarbar
 ```
+
 The ```import``` statement imports the packages related to WordGen. The decorator ```wordgen.utils.registerU()``` is used to register the block of code running in the specified loop (if in the n-th loop that means the loop will generate entries consisting n element)
+
 
 
 <!-- CONTRIBUTING -->
