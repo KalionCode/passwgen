@@ -77,16 +77,28 @@ The project come with a default preset and can be used straight out of the box.
 
 First, clone the repositry
    ```sh
+<<<<<<< HEAD
    git clone hhttps://github.com/KalionCode/wordgen.git
    ```
 Then install the locally cloned package with ```pip```
   ```sh
   cd wordgen 
+=======
+   git clone hhttps://github.com/KalionCode/WordGen.git
+   ```
+Then install the locally cloned package with ```pip```
+  ```sh
+  cd WordGen 
+>>>>>>> 544c5f5c55ff1c6da2a8fc8cc289aa5fb37983e5
   pip install -e .
   ```
 or install directly from the ```pip``` repositry **(waiting for approval)**
   ```sh
+<<<<<<< HEAD
   pip install wordgen
+=======
+  pip install WordGen
+>>>>>>> 544c5f5c55ff1c6da2a8fc8cc289aa5fb37983e5
   ```
 
 
@@ -108,7 +120,11 @@ wordgen.generateWordList(['foo', 'bar'])
 # barbarfoo
 # barbarbar
 ```
+<<<<<<< HEAD
 The ```import``` statement imports the packages related to WordGen. The decorator ```wordgen.utils.registerU()``` is used to register the block of code running in the specified loop (if in the n-th loop that means the loop will generate entries consisting n element)
+=======
+The ```import``` statement imports the packages related to WordGen. The decorator ```WordGen.utils.registerU()``` is used to register the block of code running in the specified loop (if in the n-th loop that means the loop will generate entries consisting n element)
+>>>>>>> 544c5f5c55ff1c6da2a8fc8cc289aa5fb37983e5
 
 
 <!-- CONTRIBUTING -->
