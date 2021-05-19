@@ -1,6 +1,5 @@
 registered = []
 def main(n):
-
     def register_func_wrapper(func):
         global registered
         if (n > len(registered)-1 ):
@@ -12,7 +11,7 @@ def main(n):
 
 
 
-def registerfunc_getRegistered():
+def getRegistered():
     return registered
 
 

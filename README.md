@@ -75,17 +75,40 @@ The project come with a default preset and can be used straight out of the box.
 
 ### Installation
 
-Just simply clone the repo and start cracking!
+First, clone the repositry
    ```sh
    git clone hhttps://github.com/KalionCode/passwgen.git
    ```
+Then install the locally cloned package with ```pip```
+  ```sh
+  cd passwgen 
+  pip install -e .
+  ```
+or install directly from the ```pip``` repositry **(waiting for approval)**
+  ```sh
+  pip install passwgen
+  ```
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+PasswGen uses a keyword combination approach on generating entries. What that means is that you basically give PasswGen a list of keywords and it returns you different combinations of those keywords. The most basic usage would be:
+```python
+import passwgen
+@passwgen.utils.registerU(2)
+def someFunction(fstr, config , usedKeywords):
+  print(fstr)
 
+passwgen.generateWordList(['foo', 'bar'])
 
+# output: 
+# foofoofoo
+# ...
+# barbarfoo
+# barbarbar
+```
+The ```import``` statement imports the packages related to PasswGen. The decorator ```passwgen.utils.registerU()``` is used to register the block of code running in the specified loop (if in the n-th loop that means the loop will generate entries consisting n element)
 
 
 <!-- CONTRIBUTING -->

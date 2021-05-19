@@ -3,7 +3,7 @@ import itertools
 import passwgen.formats 
 import passwgen.utils as utils 
 
-from passwgen.utils.registerfunc import registerfunc_getRegistered 
+from passwgen.utils.registerFunc import getRegistered 
 
 default_config = {
     'leet':{
@@ -20,14 +20,17 @@ default_config = {
     'maxKeywordCombo':3
 }
 
-config = {
-    'maxKeywordCombo': 3,
-    **default_config
-}
-
-def generateWordlist(keywords, config):
+def generateWordList(keywords, config={}):
+    config = {
+        **config,
+        **default_config
+    }
     for n in range(1,config.get('maxKeywordCombo')+1 ):
-        func = registerfunc_getRegistered()[n]
+        if n > len(getRegistered())-1: 
+            func = None
+        else: 
+            func = getRegistered()[n]
+
         for i in itertools.product(keywords, repeat=n):
             fstr = "".join(i)
             if func is not None:
@@ -35,19 +38,3 @@ def generateWordlist(keywords, config):
     
     
 
-@utils.registerfuncU(1)
-def d1(fstr, config, usedKeywords):
-    print(fstr)
-
-def d2(fstr, config, usedKeywords):
-    print(fstr)
-
-def d3(fstr, config, usedKeywords):
-    print(fstr)
-
-def d4(fstr, config, usedKeywords):
-    print(fstr)
-
-
-
-generateWordlist(['westlake','wbhs','forrest','hill'], config=config)
